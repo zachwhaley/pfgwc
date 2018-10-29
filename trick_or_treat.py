@@ -84,4 +84,5 @@ while game_over == False:
 
 print("What a fun night!")
 print("You got:")
-print(candy_bag)
+for candy in candy_bag:
+    print(candy)
