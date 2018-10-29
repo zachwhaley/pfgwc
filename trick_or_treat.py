@@ -36,13 +36,13 @@ do_not_care = input("Would you like to start trick or treating? ")
 print("""
 Great, let's get started!
 
-At each house you can either take a treat or trick the nice person handing out candy.
-If you take a treat, a candy will be added to your candy bag.
-If you trick the person, a candy will be removed from your candy bag.
-To end the game, type 'goodnight'
+At each house you can either take a treat or play a trick on the nice person handing out candy.
+Type 'treat' to take a treat. If you take a treat, a candy will be added to your candy bag.
+Type 'trick' to play a trick. If you play a trick, a candy will be removed from your candy bag.
+Type 'goodnight' to end the game.
 """)
 do_not_care = input("Understand? ")
-print("Great! let's go!")
+print("Great! Let's go!")
 print()
 
 candy_bag = []
