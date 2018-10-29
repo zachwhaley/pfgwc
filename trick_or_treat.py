@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # A fun trick or treat game for PfGWC
+import random
+from candy import candy_list
 
 print("""
 ██████╗ ███████╗ ██████╗ ██╗    ██╗ ██████╗
@@ -41,22 +43,22 @@ print()
 print("You've come to your first house!")
 
 def handout_candy():
-    return 'Snickers'
+    return random.choice(candy_list)
 
 candy_bag = []
 game_over = False
 while game_over == False:
     print("Nice person: Well hello there little " + costume + "!")
     trick_or_treat = input(name + ": Trick or Treat! ")
-    candy = handout_candy()
     if trick_or_treat == 'trick':
         print("Nice person: Hey! I'm taking a candy from you!")
-        if candy in candy_bag:
-            candy_bag.remove(candy)
+        if len(candy_bag) > 0:
+            candy = candy_bag.pop()
             print("You lost a " + candy + "!")
         else:
-            print("You ran away. No candy lost!")
+            print("You have no candy!!")
     elif trick_or_treat == 'treat':
+        candy = handout_candy()
         print("Nice person: Aw, here's a " + candy + " for you!")
         candy_bag.append(candy)
     elif trick_or_treat == 'goodnight':
@@ -64,9 +66,9 @@ while game_over == False:
         game_over = True
     else:
         print("Nice person: Umm okay... bye")
-    print()
     if game_over == False:
         print("Next house!")
+    print()
 
 print("What a fun night!")
 print("You got:")
