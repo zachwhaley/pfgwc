@@ -5,6 +5,7 @@ import random
 from candy import candy_list
 
 # adding some comments to test sync stuff
+# More testing making things work with both making changes.
 
 # The cool writing can be done at http://patorjk.com/software/taag/
 print("""
