@@ -4,6 +4,8 @@
 import random
 from candy import candy_list
 
+# adding some comments to test syn stuff
+
 # The cool writing can be done at http://patorjk.com/software/taag/
 print("""
 ██████╗ ███████╗ ██████╗ ██╗    ██╗ ██████╗
