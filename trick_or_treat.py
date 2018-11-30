@@ -4,6 +4,7 @@
 import random
 from candy import candy_list
 
+# More than one change being made at the same time
 # adding some comments to test sync stuff
 # More testing making things work with both making changes.
 
